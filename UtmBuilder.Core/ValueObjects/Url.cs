@@ -15,7 +15,7 @@ namespace UtmBuilder.Core.ValueObjects
         {
             Address = address;
 
-            InvalidUrlException.ThrowIFInvalidUrl(address);
+            InvalidUrlException.ThrowIFInvalid(address);
         }
 
 
