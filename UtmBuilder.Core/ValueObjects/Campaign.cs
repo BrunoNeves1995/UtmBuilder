@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using UtmBuilder.Core.ValueObjects.Exceptions;
 
 namespace UtmBuilder.Core.ValueObjects
 {
@@ -26,6 +22,10 @@ namespace UtmBuilder.Core.ValueObjects
             Id = id;
             Term = term;
             Content = content;
+
+            InvalidCampaignException.ThrowIfNull(item: source, "source é invalido ");
+            InvalidCampaignException.ThrowIfNull(item: medium, "medium é invalido ");
+            InvalidCampaignException.ThrowIfNull(item: name, "name é invalido ");
         }
 
         public string? Id { get; }
