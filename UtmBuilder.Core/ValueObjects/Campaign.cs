@@ -23,9 +23,9 @@ namespace UtmBuilder.Core.ValueObjects
             Term = term;
             Content = content;
 
-            InvalidCampaignException.ThrowIfNull(item: source, "source é invalido ");
-            InvalidCampaignException.ThrowIfNull(item: medium, "medium é invalido ");
-            InvalidCampaignException.ThrowIfNull(item: name, "name é invalido ");
+            InvalidCampaignException.ThrowIfNull(item: source, "source é invalido");
+            InvalidCampaignException.ThrowIfNull(item: medium, "medium é invalido");
+            InvalidCampaignException.ThrowIfNull(item: name, "name é invalido");
         }
 
         public string? Id { get; }

@@ -32,6 +32,7 @@ namespace UtmBulder.Core.Test.ValueObjects
                     Assert.Fail();
                 }
                 catch (InvalidCampaignException)
+                    //when(e.Message == "source é invalido")
                 {
 
                     Assert.IsTrue(true);
